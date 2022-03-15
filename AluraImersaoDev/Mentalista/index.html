@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+  <body>
+    <head>
+      <meta charset="utf-8">
+      <script src="app.js"></script> 
+      <link type="text/css" href="AluraImersaoDev/Mentalista/folha.css">         
+    </head>
+    <style>
+      body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 600px;
+    background-image: url("https://c.tenor.com/rZayzxMngNYAAAAC/magia-hechizo.gif");
+    background-color: black;
+    background-size:contain ;
+    background-position: center ;
+    background-repeat: no-repeat;
+  }
+  #score{    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color:aliceblue;
+    text-shadow:#000 -1px -1px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 16px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  @media (max-height: 500px) {
+    body {
+      min-height: 800px;
+    }
+  }
+  
+  input {
+    margin: 4px;
+    padding: 6px;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  
+  .resultado {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    text-shadow:#000 -1px -1px;
+    text-align: center;
+    margin-top: 16px;
+  }
+    </style>
+
+    <div class="container">
+      <h1 class="page-title">Mentalista</h1>
+
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt=""><br>
+      
+      <p class="page-subtitle">  Digite um número de 0 a 10 </p>
+            
+      <input type="number" id="valor" /><br>
+      <button type="submit" onclick="Chutar()">Chutar</button>
+      <h2 class="resultado" id="resultado"> RESULTADO: </h2>    
+    </div>
+      <div id="score">
+        <p>TENTATIVAS:</p>
+      </div>
+  </body>
